@@ -10,7 +10,7 @@ class MovieListView(ListCreateAPIView):
 
     queryset = Movie.objects.all()
     serializer_class = MovieSerializer
-    permission_classes = [AllowAny]
+    # permission_classes = [AllowAny]
 
 
 class MovieDetailView(RetrieveUpdateDestroyAPIView):
